@@ -1,7 +1,7 @@
 {
   "name": "handlebars-website-template",
   "version": "1.0.0",
-  "description": "Website template to start new static sites built on top of Handlebars and Bulma.",
+  "description": "Website template to start new static sites built on top of Handlebars and Bootstrap.",
   "author": "Adam Jarvis <adam@adamcjarvis.com>",
   "license": "ISC",
   "repository": {
@@ -42,7 +42,7 @@
     "stylelint-scss": "^3.8.0"
   },
   "dependencies": {
-    "bulma": "^0.7.5",
+    "bootstrap": "^4.3.1",
     "jquery": "^3.4.1"
   }
 }

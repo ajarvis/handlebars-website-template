@@ -1,9 +1,9 @@
 # Handlebars+Bulma Website Template
-Basic template to start new static sites built on top of Handlebars and Bulma.
+Basic template to start new static sites built on top of Handlebars and Bootstrap.
 
 ### Includes
  - Handlebars for lightweight templating
- - Bulma CSS framework
+ - Bootstrap CSS framework
  - SCSS Lint, Preprocessing, and minification (sourcemaps, autoprefixer, clean-css)
  - JavaScript minification and bundling
  - Static distribution folder for rapid deployment

@@ -82,9 +82,9 @@ function runBrowsersync(done) {
 function importLibraries(done) {
   gulp
     .src([
-      'node_modules/bulma/sass/**/*'
+      'node_modules/bootstrap/scss/**/*'
     ])
-    .pipe(gulp.dest(paths.src.sass+"bulma"))
+    .pipe(gulp.dest(paths.src.sass+"bootstrap"))
 
   done();
 }
