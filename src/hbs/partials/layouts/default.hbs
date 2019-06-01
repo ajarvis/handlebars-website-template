@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{pageTitle}}</title>
+  <meta name="description" content="{{pageDescription}}">
+  
+  <link rel="stylesheet" href="css/main.min.css" type="text/css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  {{#> head-block}}
+  {{!-- additional head content inserted inline from pages --}}
+  {{/head-block}}
+</head>
+
+<body>
+
+  {{#> header-block}}
+    {{> includes/header }}
+  {{/header-block}}
+
+
+  {{#> content-block}}
+  {{!-- page content inserted inline from pages --}}
+  {{/content-block}}
+
+  {{#> footer-block}}
+    {{> includes/footer }}
+  {{/footer-block}}
+
+  <script src="js/bundle.min.js"></script>
+
+  {{#> scripts-block}}
+  {{!-- additional scripts inserted inline from pages --}}
+  {{/scripts-block}}
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "name": "handlebars-website-template",
+  "version": "1.0.0",
+  "description": "Website template to start new static sites built on top of Handlebars and Bulma.",
+  "author": "Adam Jarvis <adam@adamcjarvis.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajarvis/handlebars-website-template/"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "browser-sync": "^2.26.5",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-hb": "^8.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-purgecss": "^1.1.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-series": "^1.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylelint": "^9.0.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass-tilde-importer": "^1.0.2",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-config-standard-scss": "^1.1.0",
+    "stylelint-declaration-use-variable": "^1.7.0",
+    "stylelint-scss": "^3.8.0"
+  },
+  "dependencies": {
+    "bulma": "^0.7.5",
+    "jquery": "^3.4.1"
+  }
+}
