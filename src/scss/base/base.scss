@@ -1,1 +1,47 @@
-// Base Styles
+/**** Colors ****/
+.bg-blue-1 {
+  background-color: $blue-1;
+}
+
+.bg-blue-2 {
+  background-color: $blue-2;
+}
+
+.bg-blue-3 {
+  background-color: $blue-3;
+}
+
+.bg-blue-overlay {
+  background-color: rgba(1, 131, 170, 0.85);
+}
+
+.bg-green-1 {
+  background-color: $green-1;
+}
+
+.text-blue-1 {
+  color: $blue-1;
+}
+
+.text-blue-2 {
+  color: $blue-2;
+}
+
+.text-blue-3 {
+  color: $blue-3;
+}
+
+.text-green-1 {
+  color: $green-1;
+}
+
+/**** Buttons ****/
+.btn-green {
+  background-color: $green-1;
+}
+
+.btn-rounded {
+  border-radius: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

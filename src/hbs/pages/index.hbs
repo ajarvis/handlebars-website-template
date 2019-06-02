@@ -1,29 +1,66 @@
-{{#> layouts/default
+{{#> layouts/home
   pageTitle="Handlebars Boilerplate"
   pageDescription="A simple and lightweight boilerplate to kick-off new static web projects."
 }}
 
 {{#*inline "content-block"}}
 
-<section class="hero is-primary">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Handlebars Boilerplate
-      </h1>
-      <h2 class="subtitle">
-        Rapidly create static websites.
-      </h2>
+<div class="jumbotron jumbotron-fluid mb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-10 col-lg-7">
+        <div class="bg-blue-overlay text-light p-4">
+          <h1 class="h1">Welcome</h1>
+          <h1 class="display-4">Subtitle Goes</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum tellus vitae nisi maximus, sed consequat ex eleifend. Integer molestie pretium efficitur. Pellentesque laoreet pulvinar suscipit.</p>
+          <a class="btn btn-green btn-rounded">Call-to-Action</a>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<section class="container text-center py-5">
+  <h1>Secion Title</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum tellus vitae nisi maximus, sed consequat ex eleifend. Integer molestie pretium efficitur. Pellentesque laoreet pulvinar suscipit. Pellentesque consequat, justo quis scelerisque suscipit, ante ligula lobortis quam, nec commodo enim leo a nunc. Aenean finibus lobortis orci, in cursus mi elementum gravida. Aenean felis arcu, blandit eu libero sed, luctus laoreet lorem. Curabitur tempus mi eget tellus mollis, a condimentum ante scelerisque. Duis felis tortor, mattis porta leo eget, convallis volutpat eros. Donec tellus odio, feugiat non volutpat vitae, elementum vel justo.</p>
+</section>
+
+<section class="bg-blue-2 text-light text-center py-5">
+  <div class="container">
+    <h1>Section Title</h1>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3">
+        col
+      </div><!-- /.col -->
+      <div class="col-12 col-md-6 col-lg-3">
+        col
+      </div><!-- /.col -->
+      <div class="col-12 col-md-6 col-lg-3">
+        col
+      </div><!-- /.col -->
+      <div class="col-12 col-md-6 col-lg-3">
+        col
+      </div><!-- /.col -->
+    </div><!-- /.row -->
   </div>
 </section>
 
-<section class="section">
+<section class="py-5">
   <div class="container">
-    <h1 class="title">Section</h1>
-    <h2 class="subtitle">
-      A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-    </h2>
+    <h1>Section Title</h1>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        col
+      </div><!-- /.col -->
+      <div class="col-12 col-md-3">
+        col
+      </div><!-- /.col -->
+      <div class="col-12 col-md-3">
+        col
+      </div><!-- /.col -->
+    </div><!-- /.row -->
   </div>
 </section>
 
@@ -32,4 +69,4 @@
 {{#*inline "scripts-block"}}
 {{/inline}}
 
-{{/layouts/default}}
+{{/layouts/home}}
