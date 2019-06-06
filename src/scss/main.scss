@@ -22,10 +22,14 @@ $container-max-widths: (
   xl: 1440px
 );
 
+/**** Import Fonts ****/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap');
+
 /**** Import Bootstrap ****/
 @import "bootstrap/bootstrap";
 
 /**** Custom Colors ****/
+$blue-0: #46a1be;
 $blue-1: #0881a8;
 $blue-2: #00567d;
 $blue-3: #014864;

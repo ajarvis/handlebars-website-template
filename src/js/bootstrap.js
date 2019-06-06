@@ -1,17 +1,13 @@
-"use strict";
-"use strict";
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
 /*!
   * Bootstrap v4.3.1 (https://getbootstrap.com/)
   * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {
-  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.js')) : typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) : (global = global || self, factory(global.bootstrap = {}, global.jQuery, global.Popper));
-})(void 0, function (exports, $, Popper) {
-  'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.js')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
+  (global = global || self, factory(global.bootstrap = {}, global.jQuery, global.Popper));
+}(this, function (exports, $, Popper) { 'use strict';
 
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
   Popper = Popper && Popper.hasOwnProperty('default') ? Popper['default'] : Popper;
@@ -71,19 +67,18 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     subClass.prototype.constructor = subClass;
     subClass.__proto__ = superClass;
   }
+
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v4.3.1): util.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
-
   /**
    * ------------------------------------------------------------------------
    * Private TransitionEnd Helpers
    * ------------------------------------------------------------------------
    */
-
 
   var TRANSITION_END = 'transitionend';
   var MAX_UID = 1000000;
@@ -227,6 +222,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     }
   };
   setTransitionEndSupport();
+
   /**
    * ------------------------------------------------------------------------
    * Constants
@@ -267,8 +263,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     } // Getters
 
 
-    var _proto = Alert.prototype; // Public
+    var _proto = Alert.prototype;
 
+    // Public
     _proto.close = function close(element) {
       var rootElement = this._element;
 
@@ -390,12 +387,12 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     $.fn[NAME] = JQUERY_NO_CONFLICT;
     return Alert._jQueryInterface;
   };
+
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-
 
   var NAME$1 = 'button';
   var VERSION$1 = '4.3.1';
@@ -434,8 +431,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     } // Getters
 
 
-    var _proto = Button.prototype; // Public
+    var _proto = Button.prototype;
 
+    // Public
     _proto.toggle = function toggle() {
       var triggerChangeEvent = true;
       var addAriaPressed = true;
@@ -543,12 +541,12 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     $.fn[NAME$1] = JQUERY_NO_CONFLICT$1;
     return Button._jQueryInterface;
   };
+
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-
 
   var NAME$2 = 'carousel';
   var VERSION$2 = '4.3.1';
@@ -654,8 +652,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     } // Getters
 
 
-    var _proto = Carousel.prototype; // Public
+    var _proto = Carousel.prototype;
 
+    // Public
     _proto.next = function next() {
       if (!this._isSliding) {
         this._slide(Direction.NEXT);
@@ -1042,7 +1041,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
         var _config = _objectSpread({}, Default, $(this).data());
 
-        if (_typeof(config) === 'object') {
+        if (typeof config === 'object') {
           _config = _objectSpread({}, _config, config);
         }
 
@@ -1142,12 +1141,12 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     $.fn[NAME$2] = JQUERY_NO_CONFLICT$2;
     return Carousel._jQueryInterface;
   };
+
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-
 
   var NAME$3 = 'collapse';
   var VERSION$3 = '4.3.1';
@@ -1227,8 +1226,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     } // Getters
 
 
-    var _proto = Collapse.prototype; // Public
+    var _proto = Collapse.prototype;
 
+    // Public
     _proto.toggle = function toggle() {
       if ($(this._element).hasClass(ClassName$3.SHOW)) {
         this.hide();
@@ -1429,7 +1429,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
         var $this = $(this);
         var data = $this.data(DATA_KEY$3);
 
-        var _config = _objectSpread({}, Default$1, $this.data(), _typeof(config) === 'object' && config ? config : {});
+        var _config = _objectSpread({}, Default$1, $this.data(), typeof config === 'object' && config ? config : {});
 
         if (!data && _config.toggle && /show|hide/.test(config)) {
           _config.toggle = false;
@@ -1501,12 +1501,12 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     $.fn[NAME$3] = JQUERY_NO_CONFLICT$3;
     return Collapse._jQueryInterface;
   };
+
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-
 
   var NAME$4 = 'dropdown';
   var VERSION$4 = '4.3.1';
@@ -1599,8 +1599,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     } // Getters
 
 
-    var _proto = Dropdown.prototype; // Public
+    var _proto = Dropdown.prototype;
 
+    // Public
     _proto.toggle = function toggle() {
       if (this._element.disabled || $(this._element).hasClass(ClassName$4.DISABLED)) {
         return;
@@ -1821,9 +1822,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
           },
           preventOverflow: {
             boundariesElement: this._config.boundary
-          } // Disable Popper.js if we have a static display
+          }
+        } // Disable Popper.js if we have a static display
 
-        }
       };
 
       if (this._config.display === 'static') {
@@ -1840,7 +1841,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
       return this.each(function () {
         var data = $(this).data(DATA_KEY$4);
 
-        var _config = _typeof(config) === 'object' ? config : null;
+        var _config = typeof config === 'object' ? config : null;
 
         if (!data) {
           data = new Dropdown(this, _config);
@@ -2026,12 +2027,12 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     $.fn[NAME$4] = JQUERY_NO_CONFLICT$4;
     return Dropdown._jQueryInterface;
   };
+
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-
 
   var NAME$5 = 'modal';
   var VERSION$5 = '4.3.1';
@@ -2105,8 +2106,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     } // Getters
 
 
-    var _proto = Modal.prototype; // Public
+    var _proto = Modal.prototype;
 
+    // Public
     _proto.toggle = function toggle(relatedTarget) {
       return this._isShown ? this.hide() : this.show(relatedTarget);
     };
@@ -2523,7 +2525,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
       return this.each(function () {
         var data = $(this).data(DATA_KEY$5);
 
-        var _config = _objectSpread({}, Default$3, $(this).data(), _typeof(config) === 'object' && config ? config : {});
+        var _config = _objectSpread({}, Default$3, $(this).data(), typeof config === 'object' && config ? config : {});
 
         if (!data) {
           data = new Modal(this, _config);
@@ -2607,14 +2609,13 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     $.fn[NAME$5] = JQUERY_NO_CONFLICT$5;
     return Modal._jQueryInterface;
   };
+
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v4.3.1): tools/sanitizer.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
-
-
   var uriAttrs = ['background', 'cite', 'href', 'itemtype', 'longdesc', 'poster', 'src', 'xlink:href'];
   var ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i;
   var DefaultWhitelist = {
@@ -2729,12 +2730,12 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
     return createdDocument.body.innerHTML;
   }
+
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-
 
   var NAME$6 = 'tooltip';
   var VERSION$6 = '4.3.1';
@@ -2850,8 +2851,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     } // Getters
 
 
-    var _proto = Tooltip.prototype; // Public
+    var _proto = Tooltip.prototype;
 
+    // Public
     _proto.enable = function enable() {
       this._isEnabled = true;
     };
@@ -3099,7 +3101,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     };
 
     _proto.setElementContent = function setElementContent($element, content) {
-      if (_typeof(content) === 'object' && (content.nodeType || content.jquery)) {
+      if (typeof content === 'object' && (content.nodeType || content.jquery)) {
         // Content is a DOM node or a jQuery
         if (this.config.html) {
           if (!$(content).parent().is($element)) {
@@ -3203,7 +3205,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     };
 
     _proto._fixTitle = function _fixTitle() {
-      var titleType = _typeof(this.element.getAttribute('data-original-title'));
+      var titleType = typeof this.element.getAttribute('data-original-title');
 
       if (this.element.getAttribute('title') || titleType !== 'string') {
         this.element.setAttribute('data-original-title', this.element.getAttribute('title') || '');
@@ -3293,7 +3295,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
           delete dataAttributes[dataAttr];
         }
       });
-      config = _objectSpread({}, this.constructor.Default, dataAttributes, _typeof(config) === 'object' && config ? config : {});
+      config = _objectSpread({}, this.constructor.Default, dataAttributes, typeof config === 'object' && config ? config : {});
 
       if (typeof config.delay === 'number') {
         config.delay = {
@@ -3371,7 +3373,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
       return this.each(function () {
         var data = $(this).data(DATA_KEY$6);
 
-        var _config = _typeof(config) === 'object' && config;
+        var _config = typeof config === 'object' && config;
 
         if (!data && /dispose|hide/.test(config)) {
           return;
@@ -3445,12 +3447,12 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     $.fn[NAME$6] = JQUERY_NO_CONFLICT$6;
     return Tooltip._jQueryInterface;
   };
+
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-
 
   var NAME$7 = 'popover';
   var VERSION$7 = '4.3.1';
@@ -3507,8 +3509,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
       return _Tooltip.apply(this, arguments) || this;
     }
 
-    var _proto = Popover.prototype; // Overrides
+    var _proto = Popover.prototype;
 
+    // Overrides
     _proto.isWithContent = function isWithContent() {
       return this.getTitle() || this._getContent();
     };
@@ -3556,7 +3559,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
       return this.each(function () {
         var data = $(this).data(DATA_KEY$7);
 
-        var _config = _typeof(config) === 'object' ? config : null;
+        var _config = typeof config === 'object' ? config : null;
 
         if (!data && /dispose|hide/.test(config)) {
           return;
@@ -3631,12 +3634,12 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     $.fn[NAME$7] = JQUERY_NO_CONFLICT$7;
     return Popover._jQueryInterface;
   };
+
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-
 
   var NAME$8 = 'scrollspy';
   var VERSION$8 = '4.3.1';
@@ -3709,8 +3712,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     } // Getters
 
 
-    var _proto = ScrollSpy.prototype; // Public
+    var _proto = ScrollSpy.prototype;
 
+    // Public
     _proto.refresh = function refresh() {
       var _this2 = this;
 
@@ -3765,7 +3769,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     ;
 
     _proto._getConfig = function _getConfig(config) {
-      config = _objectSpread({}, Default$6, _typeof(config) === 'object' && config ? config : {});
+      config = _objectSpread({}, Default$6, typeof config === 'object' && config ? config : {});
 
       if (typeof config.target !== 'string') {
         var id = $(config.target).attr('id');
@@ -3876,7 +3880,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
       return this.each(function () {
         var data = $(this).data(DATA_KEY$8);
 
-        var _config = _typeof(config) === 'object' && config;
+        var _config = typeof config === 'object' && config;
 
         if (!data) {
           data = new ScrollSpy(this, _config);
@@ -3937,12 +3941,12 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     $.fn[NAME$8] = JQUERY_NO_CONFLICT$8;
     return ScrollSpy._jQueryInterface;
   };
+
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-
 
   var NAME$9 = 'tab';
   var VERSION$9 = '4.3.1';
@@ -3988,8 +3992,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     } // Getters
 
 
-    var _proto = Tab.prototype; // Public
+    var _proto = Tab.prototype;
 
+    // Public
     _proto.show = function show() {
       var _this = this;
 
@@ -4171,12 +4176,12 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     $.fn[NAME$9] = JQUERY_NO_CONFLICT$9;
     return Tab._jQueryInterface;
   };
+
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-
 
   var NAME$a = 'toast';
   var VERSION$a = '4.3.1';
@@ -4228,8 +4233,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     } // Getters
 
 
-    var _proto = Toast.prototype; // Public
+    var _proto = Toast.prototype;
 
+    // Public
     _proto.show = function show() {
       var _this = this;
 
@@ -4297,7 +4303,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     ;
 
     _proto._getConfig = function _getConfig(config) {
-      config = _objectSpread({}, Default$7, $(this._element).data(), _typeof(config) === 'object' && config ? config : {});
+      config = _objectSpread({}, Default$7, $(this._element).data(), typeof config === 'object' && config ? config : {});
       Util.typeCheckConfig(NAME$a, config, this.constructor.DefaultType);
       return config;
     };
@@ -4335,7 +4341,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
         var $element = $(this);
         var data = $element.data(DATA_KEY$a);
 
-        var _config = _typeof(config) === 'object' && config;
+        var _config = typeof config === 'object' && config;
 
         if (!data) {
           data = new Toast(this, _config);
@@ -4385,13 +4391,13 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     $.fn[NAME$a] = JQUERY_NO_CONFLICT$a;
     return Toast._jQueryInterface;
   };
+
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v4.3.1): index.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
-
 
   (function () {
     if (typeof $ === 'undefined') {
@@ -4422,7 +4428,8 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
   exports.Tab = Tab;
   exports.Toast = Toast;
   exports.Tooltip = Tooltip;
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-});
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+//# sourceMappingURL=bootstrap.js.map

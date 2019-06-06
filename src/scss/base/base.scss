@@ -1,4 +1,26 @@
+/**** General ****/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/**** Fonts ****/
+.text-light {
+  font-weight: 300;
+}
+
+.text-normal {
+  font-weight: 400;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
 /**** Colors ****/
+.bg-blue-0 {
+  background-color: $blue-0;
+}
+
 .bg-blue-1 {
   background-color: $blue-1;
 }
