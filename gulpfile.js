@@ -211,7 +211,7 @@ function files(done) {
 
 // Watch Folders
 function watchFiles() {
-  gulp.watch(paths.src.sass, gulp.series(styles, runStylelint));
+  gulp.watch(paths.src.sass, gulp.series(runStylelint, styles));
   gulp.watch(paths.src.javascript, scripts);
   gulp.watch(paths.src.images, images);
   gulp.watch(paths.src.hbs, gulp.parallel(html, styles));

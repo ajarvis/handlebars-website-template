@@ -19,29 +19,64 @@
   background-color: $green-1;
 }
 
-.text-blue-1 {
+.text-blue-1,
+a.text-blue-1 {
   color: $blue-1;
 }
 
-.text-blue-2 {
+.text-blue-2,
+a.text-blue-2 {
   color: $blue-2;
 }
 
-.text-blue-3 {
+.text-blue-3,
+a.text-blue-3 {
   color: $blue-3;
 }
 
-.text-green-1 {
+.text-green-1,
+a.text-green-1 {
   color: $green-1;
+}
+
+a {
+  color: $blue-1;
 }
 
 /**** Buttons ****/
 .btn-green {
   background-color: $green-1;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
 }
 
 .btn-rounded {
   border-radius: 20px;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+/**** Social Icons ****/
+.social-icons {
+  height: 2rem;
+
+  .list-inline-item {
+    margin-right: 0;
+
+    a {
+      display: block;
+      height: 2rem;
+    }
+  }
+
+  .fa-circle {
+    color: #fff;
+  }
+
+  .fa-circle + .fa-inverse {
+    color: $blue-1;
+  }
 }
