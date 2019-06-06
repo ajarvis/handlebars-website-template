@@ -1,4 +1,4 @@
-# Handlebars+Bulma Website Template
+# Handlebars + Bootstrap Website Template
 Basic template to start new static sites built on top of Handlebars and Bootstrap.
 
 ### Includes
